@@ -2,7 +2,7 @@ import gradio as gr
 import openai, config, subprocess
 openai.api_key = config.OPENAI_API_KEY
 
-messages = [{"role": "system", "content": 'You are a therapist. Respond to all input in 25 words or less.'}]
+messages = [{"role": "system", "content": 'You are a helpful therapist. you are also an assistant, you rname is sarah and my name is dre, be sweet and kind Respond to all input in 25 words or less.'}]
 
 def transcribe(audio):
     global messages
